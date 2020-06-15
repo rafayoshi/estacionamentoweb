@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/src/index.html">Estacionamento WEB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown" id="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Opções
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/src/entrada.html">Veículos</a>
+                            <a class="dropdown-item" href="/src/cliente.html">Clientes</a>
+                        <a class="dropdown-item" href="/src/financeiro.html">Financeiro</a>
+                            <div class="dropdown-divider"></div>
+                            <button type="button" class="btn dropdown-item btn-outline-success my-2 my-sm-0"
+                                id="logoff">Logoff</button>
+
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="formLogin">
+                    <label for="user" style="margin-right: 10px;">Usuário</label>
+                    <input input class="form-control mr-sm-2" id="user">
+                    <label for="pass" style="margin-right: 10px;">Senha</label>
+                    <input id="pass" input class="form-control mr-sm-2" type="password">
+                    <button type="button" class="btn btn-outline-success my-2 my-sm-0" id="btLogin">login</button>
+                </form>
+            </div>
+        </nav>
+        <div style="height: 1px; background-color: lightgray;"></div>
+
+
+        <div class="container" style="margin-top: 2em;">
+            
+                <div style="display: flex; flex-direction: row;justify-content: space-evenly;">
+                    <h1 id="valor"></h1>
+                    <h1 id="placa"></h1>
+                </div>
+                    <div>
+                        <form class="form-inline my-2 my-lg-0" id="formSaida"></form>
+                        <label for="valorPago" style="margin-right: 10px;">Valor Pago</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">R$</span>
+                            </div>
+                            <input type="text" class="form-control" id="valorPago" aria-describedby="basic-addon1">
+                          </div>
+                          <label for="troco" style="margin-right: 10px;">Troco devolvido</label>
+                          <div id="displayTroco">
+                              <h1 id="troco"></h1>
+                          </div>
+                        <div style="margin-top: 1em;">
+                        <button type="button" class="btn btn-outline-success my-2 my-sm-0" id="btEnvio">Salvar</button>
+                    </div>
+                    </form>
+                    </div>
+                
+            
+        </div>
+
+
+
+
+    </div>
+
+    <script src="verificaLogin.js"></script>
+    <script src="saida.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
